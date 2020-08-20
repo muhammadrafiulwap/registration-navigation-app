@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register1Fragment">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step 1"
+        android:textSize="30sp"
+        android:drawableStart="@drawable/ic_back"
+        android:textColor="@android:color/black"
+        android:padding="50dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        tools:context=".MainFragment">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/border_gray"
+            android:layout_marginEnd="30dp"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/border_gray"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:hint="Email" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/background_blue"
+            android:text="Next" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
