@@ -9,7 +9,12 @@
         android:id="@+id/berandaFragment"
         android:name="com.udacoding.registrasinavigationapp.home.BerandaFragment"
         android:label="fragment_beranda"
-        tools:layout="@layout/fragment_beranda" />
+        tools:layout="@layout/fragment_beranda" >
+        <action
+            android:id="@+id/action_berandaFragment_to_noteFragment"
+            app:destination="@id/noteFragment"
+            />
+    </fragment>
     <fragment
         android:id="@+id/noteFragment"
         android:name="com.udacoding.registrasinavigationapp.home.NoteFragment"

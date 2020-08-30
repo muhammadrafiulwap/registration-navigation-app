@@ -1,10 +1,8 @@
 package com.udacoding.registrasinavigationapp.local
 
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
-import androidx.room.Update
+import androidx.room.*
 
+@Dao
 interface DaoNotes {
 
     @Query("SELECT * FROM notes")
